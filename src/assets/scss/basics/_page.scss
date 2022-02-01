@@ -12,6 +12,10 @@ body {
 }
 
 .box {
-    height: 300px;
+    padding: 20px;
+    height: 350px;
     border-radius: 5px;
+    background-color: lighten($dark-theme-bg, 10%);
+    @extend %flex;
+    flex-direction: column;
 }

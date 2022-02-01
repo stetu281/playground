@@ -1,8 +1,4 @@
 .first {
-    background-color: lighten($dark-theme-bg, 10%);
-    @extend %flex;
-    flex-direction: column;
-
     &__text {
         margin-top: 20px;
         color: $white;
