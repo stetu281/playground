@@ -1,0 +1,25 @@
+.header {
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 90%;
+    max-width: 1440px;
+    @extend %flex;
+    flex-direction: column;
+
+    &__logo {
+        width: 100px;
+    }
+
+    &__btn {
+        margin-top: 40px;
+        padding: 10px 20px;
+        background-color: $dark-theme-blue;
+        border-radius: 10px;
+        color: $dark-theme-bg;
+    }
+
+    @media screen and(min-width: 768px) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
