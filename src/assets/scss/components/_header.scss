@@ -7,7 +7,7 @@
     flex-direction: column;
 
     &__logo {
-        width: 100px;
+        width: 70px;
     }
 
     &__btn {
@@ -21,5 +21,9 @@
     @media screen and(min-width: 768px) {
         flex-direction: row;
         justify-content: space-between;
+
+        &__btn {
+            margin-top: 0;
+        }
     }
 }
