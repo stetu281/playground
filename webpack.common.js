@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     new HTMLWebpackPlugin({
       template: "./src/assets/html/index.html",
+      favicon: "./src/assets/images/favicons/512-fav.png",
     }),
     new CleanWebpackPlugin(),
     new WebpackPrettierPlugin(),
