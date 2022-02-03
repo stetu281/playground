@@ -26,6 +26,6 @@ export const fourth = () => {
     circle2.style.width = `${-50 + val * 4}px`;
     circle2.style.transform = `rotate(${0 + val / 2}deg)`;
     inst.style.transform = `translateX(${0 + val}%)`;
-    headline.style.transform = `translateX(${500 - 4 * val}px)`;
+    headline.style.transform = `translateX(${800 - 6 * val}px)`;
   });
 };
