@@ -1,29 +1,29 @@
 body {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
-    background-color: $dark-theme-bg;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  background-color: $dark-theme-bg;
 }
 
 .box-container {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
 }
 
 .box {
-    padding: 20px;
-    height: 400px;
-    border-radius: 5px;
-    background-color: lighten($dark-theme-bg, 10%);
-    @extend %flex;
-    flex-direction: column;
-    color: $white;
-    text-align: center;
+  padding: 20px;
+  height: 400px;
+  border-radius: 5px;
+  background-color: lighten($dark-theme-bg, 10%);
+  @extend %flex;
+  flex-direction: column;
+  color: $white;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {
-    .box-container {
-        padding: 20px 50px 50px 50px;
-    }
+  .box-container {
+    padding: 20px 50px 50px 50px;
+  }
 }

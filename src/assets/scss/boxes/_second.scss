@@ -1,16 +1,15 @@
 .second {
+  &__btn {
+    padding: 10px 20px;
+    border: 2px solid $white;
+    border-radius: 10px;
+    color: $white;
+  }
 
-    &__btn {
-        padding: 10px 20px;
-        border: 2px solid $white;
-        border-radius: 10px;
-        color: $white;
-    }
-
-    &__text {
-        margin-top: 20px;
-        padding: 10px;
-        background-color: rgba($black, 0.6);
-        border-radius: 10px;
-    }
+  &__text {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba($black, 0.6);
+    border-radius: 10px;
+  }
 }
