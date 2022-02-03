@@ -5,9 +5,9 @@ body {
 }
 
 .box-container {
-    padding: 20px 50px 50px 50px;
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
 }
 
@@ -20,4 +20,10 @@ body {
     flex-direction: column;
     color: $white;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .box-container {
+        padding: 20px 50px 50px 50px;
+    }
 }
