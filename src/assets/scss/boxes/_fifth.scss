@@ -1,0 +1,38 @@
+$s: 50deg;
+
+.fifth {
+  &__wheel {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform cubic-bezier(0.47, 0.02, 0.21, 1.03);
+  }
+
+  &__part {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #3a3a3a;
+    left: 50%;
+    top: 50%;
+    transform-origin: left top;
+
+    @for $i from 0 through 8 {
+      &:nth-of-type(#{$i + 1}) {
+        background-color: rgb(66, 255, 28);
+        filter: hue-rotate(#{$i * 40}deg);
+        transform: rotate(#{$i * 40}deg) skew($s);
+      }
+    }
+  }
+
+  &__button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: 2px solid #2bec82;
+    border-radius: 5px;
+    color: #2bec82;
+  }
+}
